@@ -19,7 +19,7 @@
 ```bash
 sudo bash -c 'cd /opt && curl -sL https://github.com/dannisjay/emby_panel/releases/download/v1.0/emby_panel.tar.gz | tar -xz'
 ```
-cd /opt/emby_panel, 修改配置 config.php
+##### 进入/opt/emby_panel, 修改配置 config.php
 
 ### 2. 安装 Apache2 和 PHP 环境
 ```bash

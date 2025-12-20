@@ -14,12 +14,16 @@
 
 
 ## 部署教程
-
-
+### 目录结构
+```bash
+/opt/emby-panel# tree
+├── config.php
+├── docker-compose.yml
+```
 ### 1. config.php
 #### 模版
 ```bash
-https://raw.githubusercontent.com/dannisjay/emby_panel/refs/heads/main/config.php
+https://raw.githubusercontent.com/dannisjay/emby-panel/refs/heads/main/config.php
 ```
 ### 2. docker-compose.yml
 ```bash

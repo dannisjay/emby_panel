@@ -25,15 +25,11 @@
 ```bash
 https://raw.githubusercontent.com/dannisjay/emby-panel/refs/heads/main/config.php
 ```
-#### config.php文件权限
-```bash
-sudo chmod 664 /opt/emby-panel/config.php
-```
 ### 2. docker-compose.yml
 ```bash
 services:
   emby-panel:
-    image: dannis1514/emby-panel:latest
+    image: dannis1514/emby-panel:beta
     container_name: emby-panel
     ports:
       - "8080:80"
@@ -43,6 +39,7 @@ services:
       - ./logs:/logs  # 自动创建
     environment:
       TZ: Asia/Shanghai
+    user: "${UID:-1000}:${GID:-1000}"
     restart: unless-stopped
 ```
 ### 3. 访问面板

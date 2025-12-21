@@ -5,10 +5,9 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./config.php:/var/www/html/config.php:rw
+      - ./config.php:/var/www/html/config.php:ro
       - ./data:/data
       - ./logs:/logs
     environment:
       TZ: Asia/Shanghai
-    user: "${UID:-1000}:${GID:-1000}"
     restart: unless-stopped

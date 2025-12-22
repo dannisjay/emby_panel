@@ -5,7 +5,7 @@
 return [
     // ========== Emby 服务器配置 ==========
     'emby' => [
-        'host' => 'http://ip:8096',                       // Emby 服务器地址
+        'host' => 'http://ip:8096',                // Emby 服务器地址
         'api_key' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',  // Emby API Key
         'server_name' => 'EmbyServer',                    // 服务器名称
     ],
@@ -36,7 +36,7 @@ return [
 
     // ========== 网站前端配置 ==========
     'site' => [
-        'name' => 'Emby    ',                                   // 网站名称
+        'name' => 'Emby',                                       // 网站名称
         'title' => 'Emby Signup',                               // 页面标题
         'emby_login_url' => 'https://emby.com',                 // Emby公网地址
         'custom_image' => 'https://www.loliapi.com/acg/pe/',    // 背景图片API
